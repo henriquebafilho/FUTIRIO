@@ -39,13 +39,20 @@ public class FXMLDocumentController implements Initializable {
     private Button creditos;
     
     @FXML
-    private void jogar(ActionEvent event) {
-        System.out.println("You clicked me!");
+    private void jogar(ActionEvent event) throws IOException {
+        //Colocar cena de jogar
+        Parent tableViewParent = FXMLLoader.load(getClass().getResource("02Creditos.fxml"));
+        Scene tableViewScene = new Scene(tableViewParent);
+        
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        
+        window.setScene(tableViewScene);
+        window.show();
     }
     
     @FXML
     private void goToCreditos(ActionEvent event) throws IOException{
-        Parent tableViewParent = FXMLLoader.load(getClass().getResource("Creditos.fxml"));
+        Parent tableViewParent = FXMLLoader.load(getClass().getResource("02Creditos.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
         
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();

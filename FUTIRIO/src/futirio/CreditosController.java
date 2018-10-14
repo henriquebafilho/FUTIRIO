@@ -28,10 +28,13 @@ public class CreditosController implements Initializable {
      */
     
     public void goToInicio(ActionEvent event) throws IOException{
-        Parent tableViewParent = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Parent tableViewParent = FXMLLoader.load(getClass().getResource("01Inicial.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
         
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        
+        window.setScene(tableViewScene);
+        window.show();
     }
     
     @Override

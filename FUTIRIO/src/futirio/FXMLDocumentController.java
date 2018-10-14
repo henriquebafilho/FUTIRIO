@@ -10,7 +10,9 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 
 /**
  *
@@ -19,12 +21,25 @@ import javafx.scene.control.Label;
 public class FXMLDocumentController implements Initializable {
     
     @FXML
-    private Label label;
+    private ImageView bg;
     
     @FXML
-    private void handleButtonAction(ActionEvent event) {
+    private ImageView logo;
+
+    @FXML
+    private Button jogar;
+
+    @FXML
+    private Button creditos;
+    
+    @FXML
+    private void jogar(ActionEvent event) {
         System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    }
+    
+    @FXML
+    private void creditos(ActionEvent event) {
+        System.out.println("You clicked me!");
     }
     
     @Override

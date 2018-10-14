@@ -40,8 +40,7 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void jogar(ActionEvent event) throws IOException {
-        //Colocar cena de jogar
-        Parent tableViewParent = FXMLLoader.load(getClass().getResource("02Creditos.fxml"));
+        Parent tableViewParent = FXMLLoader.load(getClass().getResource("dadosUsuario.fxml"));
         Scene tableViewScene = new Scene(tableViewParent);
         
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();

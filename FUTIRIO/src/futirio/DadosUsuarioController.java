@@ -33,7 +33,7 @@ import javafx.stage.Stage;
 public class DadosUsuarioController implements Initializable {
 
     @FXML
-    private ComboBox<Times> time;
+    private ComboBox<String> time;
 
     @FXML
     private Button avancar;
@@ -41,9 +41,9 @@ public class DadosUsuarioController implements Initializable {
     @FXML
     private Button voltar;
     
-    private List<Times> times = new ArrayList<>();
+    private List<String> times = new ArrayList<>();
     
-    private ObservableList<Times> obsTimes;
+    private ObservableList<String> obsTimes;
     
     @FXML
     public void goToInicio(ActionEvent event) throws IOException{
@@ -67,12 +67,14 @@ public class DadosUsuarioController implements Initializable {
         Times fluminense = new Times("Fluminense");
         Times vasco = new Times("Vasco");
         
-        times.add(botafogo);
-        times.add(flamengo);
-        times.add(fluminense);
-        times.add(vasco);
+        obsTimes = FXCollections.observableArrayList(
+        "Option 1",
+        "Option 2",
+        "Option 3");
         
-        obsTimes = FXCollections.observableArrayList(times);
+        time = new ComboBox(obsTimes);
+        
+        obsTimes = FXCollections.observableArrayList(obsTimes);
         
         time.setItems(obsTimes);
     }    

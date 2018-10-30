@@ -12,8 +12,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * 
- * @author Allan Borges
+ *
+ * @author Henrique Almeida
  */
 public class FUTIRIO extends Application {
     

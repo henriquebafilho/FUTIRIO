@@ -4,7 +4,7 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="futirio.CreditosController">
+<AnchorPane id="AnchorPane" prefHeight="386.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="futirio.CreditosController">
    <children>
       <TextArea editable="false" layoutX="200.0" layoutY="45.0" prefHeight="200.0" prefWidth="200.0" text="FUTIRIO foi desenvolvido por:&#10;-Allan Borges&#10;-Henrique Borges&#10;-João Victor Antunes&#10;-Leonardo Negreiros" />
       <AnchorPane layoutX="21.0" layoutY="299.0" prefHeight="87.0" prefWidth="200.0">

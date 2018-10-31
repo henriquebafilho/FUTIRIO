@@ -5,6 +5,7 @@
  */
 package futirio;
 
+import java.awt.Frame;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -41,7 +42,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void jogar(ActionEvent event) throws IOException {
         Parent tableViewParent = FXMLLoader.load(getClass().getResource("dadosUsuario.fxml"));
-        Scene tableViewScene = new Scene(tableViewParent);
+        Scene tableViewScene = new Scene(tableViewParent);       
         
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         
